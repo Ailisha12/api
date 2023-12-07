@@ -8,9 +8,9 @@ df = pd.DataFrame(data)
 API.create_table(df, 'db', 'children')
 print(df)
 
-API.delete_from_table('users', 'db', conditions="age = 17")
+API.delete_from_table('children', 'db', conditions="age = 17")
 
-query = "SELECT * FROM db.users"
+query = "SELECT * FROM db.children"
 result = API.read_sql(query)
 print(result)
 
